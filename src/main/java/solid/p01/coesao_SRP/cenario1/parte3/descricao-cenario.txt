@@ -1,0 +1,8 @@
+Vamos incrementar um pouco nosso modelo. 
+
+Agora, além de guardar o valor já pago, a classe Divida vai guardar 
+informações de cada pagamento realizado. 
+
+Para isso, vamos criar uma nova classe para representar um pagamento. 
+
+Essa classe vai guardar o nome e o CNPJ de quem o fez, bem como o valor pago.
