@@ -6,9 +6,9 @@ public class GratificaoDeDezOuVintePorcento implements Gratificacao {
     public double calcula(Funcionario funcionario) {
 
         if(funcionario.getSalarioBase() > 3000.0) {
-            return funcionario.getSalarioBase() * 0.8;
+            return funcionario.getSalarioBase() * 0.20;
         }
         else {
-            return funcionario.getSalarioBase() * 0.9;
+            return funcionario.getSalarioBase() * 0.10;
         }    }
 }

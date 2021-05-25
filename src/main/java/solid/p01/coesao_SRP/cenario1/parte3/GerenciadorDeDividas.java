@@ -21,7 +21,6 @@ public class GerenciadorDeDividas {
     Divida divida = dividas.get(cnpjCredor);
     
     if (divida != null) {
-    	
     	//divida.getPagamentos().add(pagamento);
     	//divida.paga(pagamento.getValor() );
       

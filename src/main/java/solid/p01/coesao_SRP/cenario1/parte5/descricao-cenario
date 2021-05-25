@@ -2,3 +2,5 @@ Vamos incrementar um pouco mais nosso sistema.
 
 Colocamos uma validação e alguns métodos auxiliares no CNPJ do credor e 
 permitimos algumas filtragens nos pagamentos.
+
+Criar as classses CNPJ e Pagamentos para manter a coesão do código

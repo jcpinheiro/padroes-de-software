@@ -1,5 +1,6 @@
 package solid.p01.coesao_SRP.cenario2;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 
 public class Funcionario {
@@ -7,7 +8,7 @@ public class Funcionario {
     private int id;
     private String nome;
     private Cargo cargo;
-    private Calendar dataDeAdmissao;
+    private LocalDate dataDeAdmissao;
     private double salarioBase;
     
     public int getId() {
@@ -19,7 +20,7 @@ public class Funcionario {
     public Cargo getCargo() {
         return cargo;
     }
-    public Calendar getDataDeAdmissao() {
+    public LocalDate getDataDeAdmissao() {
         return dataDeAdmissao;
     }
     public double getSalarioBase() {
@@ -34,7 +35,7 @@ public class Funcionario {
     public void setCargo(Cargo cargo) {
         this.cargo = cargo;
     }
-    public void setDataDeAdmissao(Calendar dataDeAdmissao) {
+    public void setDataDeAdmissao(LocalDate dataDeAdmissao) {
         this.dataDeAdmissao = dataDeAdmissao;
     }
     public void setSalarioBase(double salarioBase) {

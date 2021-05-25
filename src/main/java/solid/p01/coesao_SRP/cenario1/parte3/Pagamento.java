@@ -1,9 +1,11 @@
 package solid.p01.coesao_SRP.cenario1.parte3;
 
+import java.time.LocalDate;
+
 public class Pagamento {
 	
 	private String pagador;
-	private String cnpjPagador;
+	private LocalDate data;
 	private double valor;
 
 	public String getPagador() {
@@ -14,12 +16,12 @@ public class Pagamento {
 		this.pagador = pagador;
 	}
 
-	public String getCnpjPagador() {
-		return this.cnpjPagador;
+	public LocalDate getData() {
+		return data;
 	}
 
-	public void setCnpjPagador(String cnpjPagador) {
-		this.cnpjPagador = cnpjPagador;
+	public void setData(LocalDate data) {
+		this.data = data;
 	}
 
 	public double getValor() {

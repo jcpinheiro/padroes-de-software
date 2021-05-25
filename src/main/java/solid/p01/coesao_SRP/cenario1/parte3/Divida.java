@@ -13,7 +13,7 @@ public class Divida {
 	
 	private final List<Pagamento> pagamentos = new ArrayList<>();
 
-	public Iterable<Pagamento> getPagamentos() {
+	public List<Pagamento> getPagamentos() {
 		return Collections.unmodifiableList(pagamentos );
 	}
 
@@ -58,6 +58,5 @@ public class Divida {
 	public void registra(Pagamento pagamento) {
 		this.paga(pagamento.getValor() );
 		this.pagamentos.add(pagamento);
-		
 	}
 }

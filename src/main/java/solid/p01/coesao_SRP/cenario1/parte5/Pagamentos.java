@@ -1,8 +1,10 @@
 package solid.p01.coesao_SRP.cenario1.parte5;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Pagamentos {
 	
@@ -10,7 +12,6 @@ public class Pagamentos {
 	
 	private double valorPago;
 
-	
 	public void registra(Pagamento pagamento) {
 		this.pagamentos.add(pagamento);
 		paga(pagamento.getValor());
@@ -25,37 +26,21 @@ public class Pagamentos {
 		}
 		this.valorPago += valor;
 	}
-	
-	public ArrayList<Pagamento> pagamentosAntesDe(Calendar data) {
-		ArrayList<Pagamento> pagamentosFiltrados = new ArrayList<Pagamento>();
-		for (Pagamento pagamento : this.pagamentos) {
-			if (pagamento.getData().before(data)) {
-				pagamentosFiltrados.add(pagamento);
-			}
-		}
-		return pagamentosFiltrados;
+
+	public List<Pagamento> pagamentosAntesDe(LocalDate data) {
+		return this.pagamentos
+				.stream()
+				.filter(pagamento ->   pagamento.getData().isBefore(data) )
+				.collect(Collectors.toList() );
 	}
 
-	public ArrayList<Pagamento> pagamentosComValorMaiorQue(double valorMinimo) {
-		ArrayList<Pagamento> pagamentosFiltrados = new ArrayList<Pagamento>();
-		for (Pagamento pagamento : this.pagamentos) {
-			if (pagamento.getValor() > valorMinimo) {
-				pagamentosFiltrados.add(pagamento);
-			}
-		}
-		return pagamentosFiltrados;
-	}
+	public List<Pagamento> pagamentosComValorMaiorQue(double valorMinimo) {
+		return this.pagamentos
+				.stream()
+				.filter(pagamento -> pagamento.getValor() > valorMinimo)
+				.collect(Collectors.toList() );
 
-	public ArrayList<Pagamento> pagamentosDo(String cnpjPagador) {
-		ArrayList<Pagamento> pagamentosFiltrados = new ArrayList<Pagamento>();
-		for (Pagamento pagamento : this.pagamentos) {
-			if (pagamento.getCnpjPagador().equals(cnpjPagador)) {
-				pagamentosFiltrados.add(pagamento);
-			}
-		}
-		return pagamentosFiltrados;
 	}
-
 	public double getValorPago() {
 		return this.valorPago;
 	}

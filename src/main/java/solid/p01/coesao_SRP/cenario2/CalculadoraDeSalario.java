@@ -2,35 +2,34 @@ package solid.p01.coesao_SRP.cenario2;
 
 public class CalculadoraDeSalario {
 
-
     public double calcula(Funcionario funcionario) {
        
     	if(Cargo.DESENVOLVEDOR.equals(funcionario.getCargo())) {
-            return dezOuVintePorcento(funcionario);
+            return gratificaDezOuVintePorcento(funcionario);
         }
 
         if(Cargo.DBA.equals(funcionario.getCargo()) || Cargo.ANALISTA.equals(funcionario.getCargo())) {
-            return quinzeOuVinteCincoPorcento(funcionario);
+            return gratificaQuinzeOuVinteCincoPorcento(funcionario);
         }
 
         throw new RuntimeException("funcionario invalido");
     }
 
-    private double dezOuVintePorcento(Funcionario funcionario) {
+    private double gratificaDezOuVintePorcento(Funcionario funcionario) {
         if(funcionario.getSalarioBase() > 3000.0) {
-            return funcionario.getSalarioBase() * 0.8;
+            return funcionario.getSalarioBase() * 0.20;
         }
         else {
-            return funcionario.getSalarioBase() * 0.9;
+            return funcionario.getSalarioBase() * 0.10;
         }
     }
 
-    private double quinzeOuVinteCincoPorcento(Funcionario funcionario) {
+    private double gratificaQuinzeOuVinteCincoPorcento(Funcionario funcionario) {
         if(funcionario.getSalarioBase() > 2000.0) {
-            return funcionario.getSalarioBase() * 0.75;
+            return funcionario.getSalarioBase() * 0.25;
         }
         else {
-            return funcionario.getSalarioBase() * 0.85;
+            return funcionario.getSalarioBase() * 0.15;
         }
     }
     

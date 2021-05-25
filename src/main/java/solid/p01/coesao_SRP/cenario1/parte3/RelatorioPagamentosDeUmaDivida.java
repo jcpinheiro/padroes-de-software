@@ -5,12 +5,14 @@ public class RelatorioPagamentosDeUmaDivida {
 	
 	public void imprimePagamentosDa(Divida divida) {
 		Iterable<Pagamento> pagamentos = divida.getPagamentos();
-	
+		pagamentos.forEach(System.out::println );
+
+		/*
 		for (Pagamento pagamento : pagamentos) {
 			System.out.println(pagamento.getValor() );
 		}
-		
-		
+*/
+
 	}
 
 }
