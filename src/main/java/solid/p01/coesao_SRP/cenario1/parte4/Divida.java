@@ -15,6 +15,10 @@ public class Divida {
 
 	private final List<Pagamento> pagamentos = new ArrayList<>();
 
+	public Iterable<Pagamento> getPagamentos() {
+		return pagamentos;
+	}
+
 	public boolean cnpjValido() {
 		return primeiroDigitoVerificadorDoCnpj() == primeiroDigitoCorretoParaCnpj()
 				&& segundoDigitoVerificadorDoCnpj() == segundoDigitoCorretoParaCnpj();

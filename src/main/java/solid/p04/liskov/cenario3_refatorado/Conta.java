@@ -2,7 +2,7 @@ package solid.p04.liskov.cenario3_refatorado;
 
 public class Conta {
 
-    private MovimentacaoConta movimentacaoConta = new MovimentacaoConta();
+    private final MovimentacaoConta movimentacaoConta = new MovimentacaoConta();
 
     public void deposita(double valor) {
         // aplicar um taxa

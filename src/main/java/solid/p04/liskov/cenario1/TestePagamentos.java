@@ -17,6 +17,7 @@ public class TestePagamentos {
         pagamentos1.registra(p1 );
         pagamentos1.registra(p2 );
 
+
         System.out.println("Valor já pago: " + pagamentos1.getValorPago());
 
         // 122.0

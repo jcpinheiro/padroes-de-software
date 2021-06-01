@@ -15,6 +15,7 @@ public class Divida {
 
 	public List<Pagamento> getPagamentos() {
 		return Collections.unmodifiableList(pagamentos );
+
 	}
 
 	public double getTotal() {

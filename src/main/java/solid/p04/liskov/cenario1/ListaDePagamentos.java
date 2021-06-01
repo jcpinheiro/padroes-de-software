@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ListaDePagamentos extends ArrayList<Pagamento>{
+public class ListaDePagamentos extends ArrayList<Pagamento>  {
 	
 	private double valorPago;
 
@@ -13,7 +13,14 @@ public class ListaDePagamentos extends ArrayList<Pagamento>{
 		this.add(pagamento);
 		paga(pagamento.getValor());
 	}
-	
+
+	@Override
+	public boolean add(Pagamento pagamento) {
+		throw new IllegalStateException("Deve-se usar o método registra" );
+	}
+
+
+
 	private void paga(double valor) {
 		if (valor < 0) {
 			throw new IllegalArgumentException("Valor invalido para pagamento");
