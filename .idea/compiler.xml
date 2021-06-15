@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="padroes-de-software-2021" />
+        <module name="padroesdesoftware" />
       </profile>
     </annotationProcessing>
   </component>
