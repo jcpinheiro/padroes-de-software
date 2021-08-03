@@ -6,7 +6,9 @@ public class UsuarioBuilder {
 	
 	private static int contadorID = 1;
 	
-	private UsuarioBuilder() {}
+	private UsuarioBuilder() {
+
+	}
 	
 	public static UsuarioBuilder umUsuario() {
 		

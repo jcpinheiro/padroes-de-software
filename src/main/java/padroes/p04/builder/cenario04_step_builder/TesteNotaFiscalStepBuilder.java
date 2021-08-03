@@ -13,6 +13,16 @@ public class TesteNotaFiscalStepBuilder {
 				      new Item("Ultrabook", new BigDecimal(2400), 1),
 				      new Item("Tablet", new BigDecimal(900), 1));
 
+
+
+		NotaFiscalStepBuilder.newBuilder()
+				.paraEmpresa("Empresa XYZ")
+				.comCNPJ("23432.43434")
+				.comItens(produtosDeInformatica )
+				.comObservacoes("Sem Observação")
+				.naDataAtual()
+				.constroi();
+
 		NotaFiscal nf = NotaFiscalStepBuilder.newBuilder()
 										.paraEmpresa("Empresa Legal")
 										.comCNPJ("123.456.00001/1234-0")

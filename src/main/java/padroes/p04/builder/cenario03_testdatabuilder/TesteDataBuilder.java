@@ -8,7 +8,7 @@ import static padroes.p04.builder.cenario03_testdatabuilder.UsuarioBuilder.umUsu
 public class TesteDataBuilder {
 
     public static void main(String[] args) {
-        Usuario usuario1 = umUsuario().comNome("Usuario 1").constroi();
+        Usuario usuario1 = umUsuario().constroi();
         Usuario usuario2 = umUsuario().comNome("Usuario 2").constroi();
         Usuario usuario3 = umUsuario().comNome("Usuario 3").constroi();
         Usuario usuario4 = umUsuario().comNome("Usuario 4").constroi();

@@ -10,8 +10,8 @@ public class NotaFiscal {
     private LocalDate dataDeEmissao;
     private double valorBruto;
     private double impostos;
-    public List<Item> itens;
-    public String observacoes;
+    private List<Item> itens;
+    private String observacoes;
      
     public NotaFiscal(String razaoSocial, String cnpj, LocalDate dataDeEmissao,
             double valorBruto, double impostos, List<Item> itens, String observacoes) {

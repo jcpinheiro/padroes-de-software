@@ -12,7 +12,7 @@ public class MinhaApp {
 
 		// Diretor delega ao builder escolhido para construção do produto
 		cozinha.fazSanduiche(b1);
-		b2.getSanduiche();
+		b1.getSanduiche();
 	}
 
 }

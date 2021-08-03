@@ -32,7 +32,6 @@ public class NotaFiscalBuilder {
     public NotaFiscalBuilder comItem(Item item ) {
         itens.add(item );
         return this;
-
     }
 
     public NotaFiscalBuilder comObservacoes(String observacoes ) {

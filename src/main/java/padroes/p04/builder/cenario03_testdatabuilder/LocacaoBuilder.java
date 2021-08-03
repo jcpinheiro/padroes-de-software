@@ -2,6 +2,7 @@ package padroes.p04.builder.cenario03_testdatabuilder;
 
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.List;
 
 public class LocacaoBuilder {
 
@@ -14,11 +15,8 @@ public class LocacaoBuilder {
 		LocacaoBuilder builder = new LocacaoBuilder();
 		
 		builder.locacao = new Locacao();
-		
 		builder.locacao.setUsuario(UsuarioBuilder.umUsuario().constroi() );
-		
-		builder.locacao.setFilmes(Arrays.asList(FilmeBuilder.umFilme().constroi() ) );
-		
+		builder.locacao.setFilmes(List.of(FilmeBuilder.umFilme().constroi() ) );
 		builder.locacao.setDataLocacao(LocalDate.now() );
 		builder.locacao.setDataPrevista(LocalDate.now().plusDays(1) );
 		

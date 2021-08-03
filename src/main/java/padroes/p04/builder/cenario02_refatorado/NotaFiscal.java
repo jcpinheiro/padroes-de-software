@@ -48,7 +48,7 @@ public class NotaFiscal {
         return dataDeEmissao;
     }
 
-    public void setDataDeEmissao(LocalDate dataDeEmissao) {
+    void setDataDeEmissao(LocalDate dataDeEmissao) {
         this.dataDeEmissao = dataDeEmissao;
     }
 
@@ -56,7 +56,7 @@ public class NotaFiscal {
         return valorBruto;
     }
 
-    public void setValorBruto(double valorBruto) {
+    void setValorBruto(double valorBruto) {
         this.valorBruto = valorBruto;
     }
 
@@ -64,7 +64,7 @@ public class NotaFiscal {
         return impostos;
     }
 
-    public void setImpostos(double impostos) {
+    void setImpostos(double impostos) {
         this.impostos = impostos;
     }
 
