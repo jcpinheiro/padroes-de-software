@@ -16,6 +16,6 @@ public abstract class IPhoneFactory {
 		
 		return device;
 	}
-	
+	// factory method
 	protected abstract IPhone createIPhone();
 }
