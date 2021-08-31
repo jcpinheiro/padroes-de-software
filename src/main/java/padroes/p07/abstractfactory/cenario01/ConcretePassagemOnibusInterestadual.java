@@ -10,7 +10,7 @@ public class ConcretePassagemOnibusInterestadual extends PassagemOnibusInteresta
 	}
 
 	public void exibeDetalhes() {
-		System.out.println("Passagem de �nibus interestadual: " + this.getOrigem() + 
+		System.out.println("Passagem de ônibus interestadual: " + this.getOrigem() +
 				" para " + this.getDestino() + 
 				", Data/Hora: " + super.df.format(this.getDataHoraPartida().getTime()));
 	}
