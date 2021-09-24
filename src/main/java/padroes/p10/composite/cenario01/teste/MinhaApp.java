@@ -12,6 +12,7 @@ public class MinhaApp {
 		Programador pSenior = new Programador("Ricardo", 3900);
 
 
+
 		//Gerentes
 		Gerente g3 = new Gerente("João", 15000);
         Gerente g2 = new Gerente("Maria", 10000);
