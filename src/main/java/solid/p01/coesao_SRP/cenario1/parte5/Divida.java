@@ -6,7 +6,8 @@ public class Divida {
 	private String credor;
 	private Cnpj cnpjCredor;
 	
-	private final Pagamentos pagamentos= new Pagamentos();
+	private final HistoricoPagamentos historicoPagamentos = new HistoricoPagamentos();
+
 
 	public Divida(double total) {
 		this.total = total;
@@ -33,6 +34,10 @@ public class Divida {
 	}
 
 	public double valorAPagar() {
-		return this.total - this.pagamentos.getValorPago();
+		return this.total - this.historicoPagamentos.getValorPago();
+	}
+
+	public void registra(Pagamento pagamento) {
+		historicoPagamentos.registra(pagamento);
 	}
 }

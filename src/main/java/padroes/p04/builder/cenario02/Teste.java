@@ -20,6 +20,7 @@ class Teste {
     NotaFiscal notaFiscal =  new NotaFiscal("razao social qualquer",
                     "50.683.875/0001-03", LocalDate.now(), valorTotal,
                     impostos, itens,"observacoes quaisquer aqui");
+
     System.out.println(notaFiscal) ;
 
   }

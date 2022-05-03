@@ -1,6 +1,7 @@
 package padroes.p06.state.cenario02refatorado;
 
 interface EstadoDeUmOrcamento {
+
 	void aplicaDescontoExtra(Orcamento orcamento);
 
 	void aprova(Orcamento orcamento);

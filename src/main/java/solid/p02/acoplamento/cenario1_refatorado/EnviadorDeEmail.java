@@ -5,7 +5,7 @@ public class EnviadorDeEmail implements AcaoAposGerarNota {
 
      @Override
     public void executa(NotaFiscal notaFiscal) {
-         // envinando a nota fiscal por email
+         // enviando a nota fiscal por email
 
     }
 }

@@ -16,8 +16,8 @@ public class Client {
 		ProjectManager pm = new ProjectManager("Jen Barber", 40, 6000d);
 		
 		System.out.println(csvConverter.getEmployeeFormated(it) );
-		System.out.println(csvConverter.getEmployeeFormated(it) );
-		System.out.println(csvConverter.getEmployeeFormated(pm) );
+		System.out.println(jsonConverter.getEmployeeFormated(it) );
+		System.out.println(jsonConverter.getEmployeeFormated(pm) );
 		System.out.println(jsonConverter.getEmployeeFormated(pm) );
 	}
 }

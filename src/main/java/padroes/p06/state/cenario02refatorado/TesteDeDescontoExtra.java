@@ -6,6 +6,10 @@ public class TesteDeDescontoExtra {
 
         reforma.aplicaDescontoExtra();
 
+        reforma.aprova();
+
+        reforma.aplicaDescontoExtra();
+
         System.out.println(reforma.getValor());
     }
 }

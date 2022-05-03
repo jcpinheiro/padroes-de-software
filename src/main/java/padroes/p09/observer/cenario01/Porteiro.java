@@ -19,17 +19,15 @@ public class Porteiro extends Thread {
 
         while (true ) {
             int valor = scanner.nextInt();
-
             if(valor == 1) {
-                ChegadaAniversarioEvent event = new ChegadaAniversarioEvent(LocalDateTime.now() );
+                ChegadaAniversarioEvent event =
+                        new ChegadaAniversarioEvent(LocalDateTime.now() );
 
                 // Notifica os observadores
                 observadores.forEach(observer -> observer.chegou(event ) );
-
             } else {
                 System.out.println("Alarme falso ...");
             }
         }
-
     }
 }

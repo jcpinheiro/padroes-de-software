@@ -6,8 +6,8 @@ public class ISS extends DecoradorDeImposto {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public ISS(Imposto imposto) {
-		super(imposto);
+	public ISS(Imposto outroImposto ) {
+		super(outroImposto);
 		System.out.println("ISS");
 	}
 	

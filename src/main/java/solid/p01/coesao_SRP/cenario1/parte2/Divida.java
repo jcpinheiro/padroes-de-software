@@ -9,8 +9,7 @@ public class Divida {
 	private double valorPago;
 	private String credor;
 	private String cnpjCredor;
-	
-	
+
 	public Divida(double total) {
 		this.total = total;
 	}

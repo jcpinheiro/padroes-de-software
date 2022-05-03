@@ -10,21 +10,21 @@ public class Divida {
 	private double valorPago;
 	private String credor;
 	private String cnpjCredor;
-	
+
 	private final List<Pagamento> pagamentos = new ArrayList<>();
+
+	public Divida(double total) {
+		this.total = total;
+	}
 
 	public List<Pagamento> getPagamentos() {
 		return Collections.unmodifiableList(pagamentos );
-
 	}
 
 	public double getTotal() {
 		return this.total;
 	}
 
-	public void setTotal(double total) {
-		this.total = total;
-	}
 
 	public double getValorPago() {
 		return this.valorPago;

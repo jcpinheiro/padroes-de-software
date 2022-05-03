@@ -7,10 +7,9 @@ public class GerenciadorDeDividas {
     private HashMap<String, Divida> dividas = 
                                    new HashMap<String, Divida>();
  
-	public void registraDivida(String credor, String cnpjCredor, double valor) {
+	public void registraDivida(String credor, String cnpjCredor, double total) {
 		
-    Divida divida = new Divida();
-    divida.setTotal(valor);
+    Divida divida = new Divida(total );
     divida.setCredor(credor);
     divida.setCnpjCredor(cnpjCredor);
     dividas.put(cnpjCredor, divida);
@@ -21,9 +20,9 @@ public class GerenciadorDeDividas {
     Divida divida = dividas.get(cnpjCredor);
     
     if (divida != null) {
- /*   	divida.getPagamentos().add(pagamento);
-    	divida.paga(pagamento.getValor() );
- */
+    	/*divida.getPagamentos().add(pagamento);
+    	divida.paga(pagamento.getValor() );*/
+
       divida.registra(pagamento);
     }
     

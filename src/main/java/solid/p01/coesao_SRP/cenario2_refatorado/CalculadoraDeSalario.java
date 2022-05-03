@@ -3,8 +3,8 @@ package solid.p01.coesao_SRP.cenario2_refatorado;
 public class CalculadoraDeSalario {
 
     public double calcula(Funcionario funcionario) {
-       //return  funcionario.getCargo().getGratificao().calcula(funcionario );
-        return funcionario.calculaSalarioMaisGratificacao();
+       //return  funcionario.getCargo().getGratificao().calcula();
+       return funcionario.calculaSalarioMaisGratificacao();
 
     }
 

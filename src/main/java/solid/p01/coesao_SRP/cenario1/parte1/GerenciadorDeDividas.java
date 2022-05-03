@@ -26,7 +26,9 @@ public class GerenciadorDeDividas {
 		
 		Divida divida = dividas.get(cnpjCredor);
 		if (Objects.nonNull(divida) ) {
+
 			divida.setValorPago(divida.getValorPago() + valor);
+			divida.setValorPago(1000 );
 		}
 	}
 

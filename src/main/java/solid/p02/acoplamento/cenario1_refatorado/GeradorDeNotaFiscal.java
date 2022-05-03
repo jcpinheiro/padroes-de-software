@@ -16,6 +16,7 @@ public class GeradorDeNotaFiscal {
         double valor = fatura.getValorMensal();
         NotaFiscal nf = new NotaFiscal(valor, impostoSimplesSobreO(valor) );
 
+
         acoesAposGerarNota.forEach(acaoAposGerarNota -> acaoAposGerarNota.executa(nf) );
 
         return nf;

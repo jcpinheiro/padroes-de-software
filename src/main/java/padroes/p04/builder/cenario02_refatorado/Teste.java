@@ -24,8 +24,9 @@ class Teste {
 
     NotaFiscal nf =
           new NotaFiscalBuilder()
-            .paraEmpresa("Empresa XYZ")
+
             .comCnpj("123.456.789/0001-10")
+            .paraEmpresa("Empresa XYZ")
             .comItem(new Item("item 1", 100.0))
             .comItem(new Item("item 2", 200.0))
             .comItem(new Item("item 3", 300.0))

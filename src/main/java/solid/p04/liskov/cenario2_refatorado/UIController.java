@@ -8,7 +8,7 @@ public class UIController {
 
 
 	public void persist(Object object) {
-		
+
 		if (dataWriteRepository != null ) {
 			dataWriteRepository.persist(object);
 		}
@@ -20,4 +20,11 @@ public class UIController {
 		}
 	}
 
+	public void setDataReadRepository(DataReadRepository dataReadRepository) {
+		this.dataReadRepository = dataReadRepository;
+	}
+
+	public void setDataWriteRepository(DataWriteRepository dataWriteRepository) {
+		this.dataWriteRepository = dataWriteRepository;
+	}
 }

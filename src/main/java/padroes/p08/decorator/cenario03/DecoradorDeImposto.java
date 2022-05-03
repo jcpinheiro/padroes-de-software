@@ -12,10 +12,6 @@ public abstract class DecoradorDeImposto implements Imposto {
 		this.outroImposto = outroImposto;
 	}
 	
-	
-	@Override
-	public abstract double calcula(Orcamento orcamento);
-	
 	protected double calculaOutroImposto(Orcamento orcamento) {
 		
 		if (this.outroImposto != null) {

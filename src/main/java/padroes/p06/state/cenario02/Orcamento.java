@@ -20,8 +20,9 @@ public class Orcamento {
     }
 
     public void aplicaDescontoExtra() {
-        if(estadoAtual == EM_APROVACAO) valor = valor - (valor * 0.05);
-        else if (estadoAtual == APROVADO) valor = valor - (valor * 0.02);
+        if(estadoAtual == EM_APROVACAO) valor = valor - (valor * 0.02);
+        else if (estadoAtual == APROVADO) valor = valor - (valor * 0.05);
+        // else if ...
         else throw new RuntimeException("Somente orcamento em aprovação ou aprovados recebem desconto extra!");
     }
 

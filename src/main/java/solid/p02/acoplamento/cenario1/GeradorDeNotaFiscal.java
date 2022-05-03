@@ -17,8 +17,8 @@ public class GeradorDeNotaFiscal {
 
         NotaFiscal nf = new NotaFiscal(valor, impostoSimplesSobreO(valor) );
 
-        email.enviaEmail(nf);
         dao.persiste(nf);
+        email.enviaEmail(nf);
         sms.envia(nf);
 
         return nf;

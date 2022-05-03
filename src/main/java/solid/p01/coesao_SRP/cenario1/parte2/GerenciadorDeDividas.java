@@ -2,6 +2,7 @@ package solid.p01.coesao_SRP.cenario1.parte2;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 /*Cenário: Essa classe é utilizada para registrar e atualizar dívidas. 
 O método que registra dívidas cria uma instância de Divida, preenche o valor, 
@@ -23,7 +24,7 @@ public class GerenciadorDeDividas {
 	public void pagaDivida(String cnpjCredor, double valor) {
 		
 		Divida divida = dividas.get(cnpjCredor);
-		if (divida != null) {
+		if (Objects.nonNull(divida)) {
 			divida.paga(valor );
 
 		} else {

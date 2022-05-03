@@ -20,7 +20,6 @@ public class ListaDePagamentos extends ArrayList<Pagamento>  {
 	}
 
 
-
 	private void paga(double valor) {
 		if (valor < 0) {
 			throw new IllegalArgumentException("Valor invalido para pagamento");

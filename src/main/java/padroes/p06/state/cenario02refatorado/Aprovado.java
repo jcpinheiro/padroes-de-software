@@ -19,7 +19,7 @@ class Aprovado implements EstadoDeUmOrcamento {
 
 	@Override
 	public void finaliza(Orcamento orcamento) {
-		// orcamento.estadoAtual = new Finalizado();
+		orcamento.estadoAtual = new Finalizado();
 		
 	}
 }

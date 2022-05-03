@@ -15,7 +15,7 @@ class EmAprovacao implements EstadoDeUmOrcamento {
 
 	@Override
 	public void reprova(Orcamento orcamento) {
-		orcamento.estadoAtual = new Aprovado();
+		orcamento.estadoAtual = new Reprovado();
 
 		
 	}

@@ -60,7 +60,9 @@ public class NotaFiscalBuilder {
 		 NotaFiscal notaFiscal = new NotaFiscal(razaoSocial, cnpj, 
 				 					dataDeEmissao, valorBruto, 
 				 					impostos, itens, observacoes);
-		
+
+
+		 // assincrona
 		 for (AcaoAposGerarNotaFiscal acao : acoes) {
 			 acao.executa(notaFiscal);
 		 }

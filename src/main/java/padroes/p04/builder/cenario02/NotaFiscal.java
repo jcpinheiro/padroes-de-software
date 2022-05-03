@@ -67,7 +67,7 @@ public class NotaFiscal {
         this.impostos = impostos;
     }
 
-    public List<Item> getItens() {
+    public Iterable<Item> getItens() {
         return itens;
     }
 

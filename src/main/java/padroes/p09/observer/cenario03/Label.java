@@ -4,8 +4,7 @@ import java.awt.Font;
 import javax.swing.JLabel;
 
 public class Label extends JLabel {
-	private static final long serialVersionUID = -6974338600947333550L;
-	
+
 	private int count;
 	private String text;
 	

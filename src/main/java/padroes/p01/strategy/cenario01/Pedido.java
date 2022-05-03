@@ -20,7 +20,7 @@ public class Pedido {
             // ...
             return getTotal() - (0.20 * getTotal());
         }
-        if (pagamento.equals(FormaPagamento.CARTAO)) {
+        else if (pagamento.equals(FormaPagamento.CARTAO)) {
             // ...
             return getTotal() - (0.05 * getTotal());
         }

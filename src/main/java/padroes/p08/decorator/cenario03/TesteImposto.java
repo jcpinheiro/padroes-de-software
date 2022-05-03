@@ -5,12 +5,14 @@ public class TesteImposto {
 	public static void main(String[] args) {
 		
 		Orcamento orcamento = new Orcamento(600);
-		
-		Imposto icmsComISS = new ICMS( new ISS() );
+		Imposto icms = new ICMS();
+
+		Imposto icmsComISS = new ISS( new ICMS( ) );
 
 		CalculadorDeImpostos calculadora = new CalculadorDeImpostos();
-		
-		calculadora.realizaCalculo(orcamento, icmsComISS);
+
+		calculadora.realizaCalculo(orcamento, icms );
+		calculadora.realizaCalculo(orcamento, icmsComISS );
 		
 	}
 }

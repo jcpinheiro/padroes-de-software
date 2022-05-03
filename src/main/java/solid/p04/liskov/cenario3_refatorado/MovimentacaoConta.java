@@ -16,7 +16,6 @@ class MovimentacaoConta {
         }
     }
 
-
     double getSaldo() {
         return saldo;
     }

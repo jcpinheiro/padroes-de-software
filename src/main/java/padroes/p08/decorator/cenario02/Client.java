@@ -21,6 +21,6 @@ public class Client {
 		order("Lungo", new DoubleDrink(new Expresso()));
 		order("Lungo", new Milk(new DoubleDrink(new Expresso())) );
 		order("Cafe Au Lait", new Milk(new Expresso()));
-		order("English Tea", new Milk(new DoubleDrink(new Tea())) );
+		order("English Tea", new DoubleDrink(new Milk(new Tea())) );
 	}
 }
