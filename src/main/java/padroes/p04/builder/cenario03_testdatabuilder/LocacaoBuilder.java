@@ -7,8 +7,7 @@ import java.util.List;
 public class LocacaoBuilder {
 
 	private Locacao locacao;
-	
-	
+
 	private LocacaoBuilder() { }
 
 	public static LocacaoBuilder umaLocacao() {

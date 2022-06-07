@@ -3,6 +3,10 @@ package padroes.p05.factorymethod.cenario03;
 
 import padroes.p05.factorymethod.cenario03.model.*;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
 public class Client {
 	
 	public IPhone orderIPhone(String generation, String level) {
@@ -20,6 +24,7 @@ public class Client {
 			} else if(level.equals("highEnd")) {
 				device = new IPhone11Pro();
 			}
+
 		}
 		
 		device.getHardware();

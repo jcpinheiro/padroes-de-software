@@ -14,7 +14,6 @@ public class NotaFiscalBuilder {
 	public List<ItemDaNota> itens;
 	public String observacoes;
 
-
 	private List<AcaoAposGerarNotaFiscal> acoes;
  	
 	public NotaFiscalBuilder() {
@@ -63,9 +62,7 @@ public class NotaFiscalBuilder {
 
 
 		 // assincrona
-		 for (AcaoAposGerarNotaFiscal acao : acoes) {
-			 acao.executa(notaFiscal);
-		 }
+		 acoes.forEach(acao -> acao.executa(notaFiscal));
 		 
 		 return notaFiscal;
 	}

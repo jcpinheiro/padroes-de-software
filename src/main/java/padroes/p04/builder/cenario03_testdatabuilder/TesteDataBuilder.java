@@ -14,7 +14,8 @@ public class TesteDataBuilder {
         Usuario usuario4 = umUsuario().comNome("Usuario 4").constroi();
 
         List<Locacao> locacoes = List.of(
-                                umaLocacao().paraUsuario(usuario1).emAtraso().constroi(),
+                                umaLocacao().paraUsuario(usuario1).
+                                        emAtraso().constroi(),
                                 umaLocacao().paraUsuario(usuario2).emAtraso().constroi(),
                                 umaLocacao().paraUsuario(usuario3).jaFinalizada().constroi() );
         // ...

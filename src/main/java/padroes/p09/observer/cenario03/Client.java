@@ -24,8 +24,8 @@ public class Client {
 
 		frame.add(labelPanel, BorderLayout.CENTER);
 
-		Button b1 = new Button("Button #1", labelB1, labelB1B2);
-		Button b2 = new Button("Button #2", labelB1B2, labelB2);
+		Button b1 = new Button("Button #1", labelB1, labelB1B2 );
+		Button b2 = new Button("Button #2", labelB2, labelB1B2 );
 
 		frame.add(b1, BorderLayout.WEST);
 		frame.add(b2, BorderLayout.EAST);
