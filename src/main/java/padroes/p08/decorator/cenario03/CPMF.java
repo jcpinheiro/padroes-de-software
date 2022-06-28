@@ -1,6 +1,6 @@
 package padroes.p08.decorator.cenario03;
 
-public class CPMF extends DecoradorDeImposto {
+public class CPMF implements Imposto {
 	
 	public CPMF() {
 		System.out.println("CPMF");

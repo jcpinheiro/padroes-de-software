@@ -7,7 +7,7 @@ public class TesteImposto {
 		Orcamento orcamento = new Orcamento(600);
 		Imposto icms = new ICMS();
 
-		Imposto icmsComISS = new ISS( new ICMS( ) );
+		Imposto icmsComISS = new ICMS( new ISS( new CPMF() ) );
 
 		CalculadorDeImpostos calculadora = new CalculadorDeImpostos();
 

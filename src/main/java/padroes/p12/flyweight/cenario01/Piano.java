@@ -10,6 +10,7 @@ public class Piano {
 		Player player = new Player();
 
 
+
 		StringBuilder musicaEmNotas = new StringBuilder();
 		
 		for(Nota nota : musica){
