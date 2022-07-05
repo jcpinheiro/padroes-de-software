@@ -17,6 +17,7 @@ public class AlexaAI {
 	
 	public String getFindAssociations(String request) {
 		for(String[] association: associations.values()) {
+
 			if (Stream.of(association).allMatch(request::contains)) {
 				return getKeyFromAssociations(association);
 			}

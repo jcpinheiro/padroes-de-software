@@ -1,4 +1,4 @@
-package padroes.p10.composite.cenario02;
+package padroes.p10.composite.cenario01;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
