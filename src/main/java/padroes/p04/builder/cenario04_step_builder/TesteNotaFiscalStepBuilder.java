@@ -13,6 +13,7 @@ public class TesteNotaFiscalStepBuilder {
 				      new Item("Ultrabook", new BigDecimal(2400), 1),
 				      new Item("Tablet", new BigDecimal(900), 1));
 
+
 		NotaFiscalStepBuilder.newBuilder()
 				.paraEmpresa("Empresa XYZ")
 				.comCNPJ("23432.43434")

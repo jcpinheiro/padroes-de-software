@@ -2,7 +2,7 @@ package padroes.p01.strategy.cenario02;
 
 public class CalculadorDeImpostos {
 
-    public void calcula(Orcamento orcamento, String imposto) {
+    public void calcula(Orcamento orcamento, String imposto ) {
 
         if( "ICMS".equalsIgnoreCase(imposto) ) {
             double icms = new ICMS().calcula(orcamento );

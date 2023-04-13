@@ -1,10 +1,10 @@
 package padroes.p03.templatemethod.cenario03;
 
-public abstract class Algorithm {
+public abstract class SortingAlgorithm {
 
 	protected int[] nums;
 	
-	public Algorithm(int[] nums) {
+	public SortingAlgorithm(int[] nums) {
 		this.nums = nums;
 	}
 	

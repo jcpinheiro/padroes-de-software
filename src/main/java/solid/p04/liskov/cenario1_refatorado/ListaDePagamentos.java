@@ -16,6 +16,10 @@ public class ListaDePagamentos  {
 		paga(pagamento.getValor());
 	}
 
+	public boolean existe(Pagamento pagamento) {
+		return pagamentos.contains(pagamento );
+	}
+
 	private void paga(double valor) {
 		if (valor < 0) {
 			throw new IllegalArgumentException("Valor invalido para pagamento");

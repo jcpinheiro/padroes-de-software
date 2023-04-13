@@ -5,7 +5,8 @@ public class GeradorDeNotaFiscal {
     private final NotaFiscalDao dao;
     private final EnvidadorDeSMS sms;
 
-    public GeradorDeNotaFiscal(EnviadorDeEmail email, NotaFiscalDao dao, EnvidadorDeSMS sms) {
+    public GeradorDeNotaFiscal(EnviadorDeEmail email, NotaFiscalDao dao,
+                               EnvidadorDeSMS sms) {
         this.email = email;
         this.dao = dao;
         this.sms = sms;

@@ -1,6 +1,6 @@
 package padroes.p03.templatemethod.cenario03;
 
-public class SelectionSort extends Algorithm {
+public class SelectionSort extends SortingAlgorithm {
 
 	public SelectionSort(int[] nums) {
 		super(nums);

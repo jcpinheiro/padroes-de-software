@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class HistoricoPagamentos {
+class HistoricoPagamentos {
 	
 	private final List<Pagamento> pagamentos = new ArrayList<>();
 	

@@ -50,7 +50,7 @@ public class Divida {
 		this.valorPago += valor;
 	}
 
-	public List<Pagamento> pagamentosAntesDe(LocalDate data) {
+	public Iterable<Pagamento> pagamentosAntesDe(LocalDate data) {
 		return this.pagamentos
 				.stream()
 				.filter(pagamento -> pagamento.getData().isBefore(data) )
@@ -68,7 +68,7 @@ public class Divida {
 */
 	}
 
-	public List<Pagamento> pagamentosComValorMaiorQue(double valorMinimo) {
+	public Iterable<Pagamento> pagamentosComValorMaiorQue(double valorMinimo) {
 		return this.pagamentos
 				.stream()
 				.filter(pagamento -> pagamento.getValor() > valorMinimo)

@@ -16,8 +16,14 @@ public class TesteDataBuilder {
         List<Locacao> locacoes = List.of(
                                 umaLocacao().paraUsuario(usuario1).
                                         emAtraso().constroi(),
-                                umaLocacao().paraUsuario(usuario2).emAtraso().constroi(),
-                                umaLocacao().paraUsuario(usuario3).jaFinalizada().constroi() );
+
+                                umaLocacao().paraUsuario(usuario2)
+                                            .emAtraso()
+                                            .constroi(),
+
+                                umaLocacao().paraUsuario(usuario3)
+                                        .jaFinalizada()
+                                        .constroi() );
         // ...
     }
 }

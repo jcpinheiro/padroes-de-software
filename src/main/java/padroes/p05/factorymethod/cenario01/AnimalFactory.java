@@ -4,7 +4,7 @@ public class AnimalFactory {
 
 	public static Animal getAnimal(AnimalType type) {
 
-	/*	if(type == AnimalType.CAT) {
+/*		if(type == AnimalType.CAT) {
 			return new Cat();
 		} else if(type == AnimalType.DOG) {
 			return new Dog();
@@ -13,7 +13,6 @@ public class AnimalFactory {
 		} else if(type == AnimalType.TIGER) {
 			return new Tiger();
 		}*/
-		
 		return type.getAnimal();
 	}
 }

@@ -22,6 +22,13 @@ class Teste {
                     impostos, itens,"observacoes quaisquer aqui");
 
     System.out.println(notaFiscal) ;
-
+/*
+   NotaFiscal nf =  new NotaFiscalBuilder()
+            .paraEmmpresa("empresa xyz")
+            .comCNPJ("324324/0001")
+            .naDataAtual()
+            .adiciona(item1, item2, ...)
+            .comObservacoes("Uma observação")
+            . constroi();*/
   }
 }

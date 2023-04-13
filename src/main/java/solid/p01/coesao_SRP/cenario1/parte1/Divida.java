@@ -1,5 +1,6 @@
-/*Cenário: A classe Divida deve armazenar o credor (para quem a empresa está devendo), 
-o CNPJ desse credor, o valor total da dívida e o seu valor já pago.*/
+/*Cenário: A classe Divida deve armazenar o credor (para quem a empresa
+           está devendo), o CNPJ desse credor, o valor total da dívida e
+           o seu valor já pago.*/
 
 package solid.p01.coesao_SRP.cenario1.parte1;
 

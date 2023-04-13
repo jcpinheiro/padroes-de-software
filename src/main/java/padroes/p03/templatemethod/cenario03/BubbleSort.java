@@ -1,6 +1,6 @@
 package padroes.p03.templatemethod.cenario03;
 
-public class BubbleSort extends Algorithm {
+public class BubbleSort extends SortingAlgorithm {
 
 	public BubbleSort(int[] nums) {
 		super(nums);

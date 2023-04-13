@@ -23,9 +23,7 @@ class Teste {
     System.out.println(notaFiscal) ;*/
 
     NotaFiscal nf =
-          new NotaFiscalBuilder()
-
-            .comCnpj("123.456.789/0001-10")
+          new NotaFiscalBuilder().comCnpj("123.456.789/0001-10")
             .paraEmpresa("Empresa XYZ")
             .comItem(new Item("item 1", 100.0))
             .comItem(new Item("item 2", 200.0))

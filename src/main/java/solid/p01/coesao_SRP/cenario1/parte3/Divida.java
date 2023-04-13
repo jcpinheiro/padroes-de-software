@@ -2,6 +2,7 @@ package solid.p01.coesao_SRP.cenario1.parte3;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Divida {
@@ -11,14 +12,20 @@ public class Divida {
 	private String credor;
 	private String cnpjCredor;
 
-	private final List<Pagamento> pagamentos = new ArrayList<>();
+	private final List<Pagamento> pagamentos = new LinkedList<>();
 
 	public Divida(double total) {
 		this.total = total;
 	}
 
+/*
 	public List<Pagamento> getPagamentos() {
 		return Collections.unmodifiableList(pagamentos );
+	}
+*/
+
+	public Iterable<Pagamento> getPagamentos() {
+		return pagamentos;
 	}
 
 	public double getTotal() {

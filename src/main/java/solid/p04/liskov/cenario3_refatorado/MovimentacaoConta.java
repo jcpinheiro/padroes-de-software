@@ -20,7 +20,7 @@ class MovimentacaoConta {
         return saldo;
     }
 
-    public void somaInvestimento(){
+    public void somaInvestimento() {
         this.saldo += this.saldo * 0.01;
     }
 
