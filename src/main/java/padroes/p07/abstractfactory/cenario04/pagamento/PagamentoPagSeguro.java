@@ -17,8 +17,9 @@ public class PagamentoPagSeguro {
 	    this.gestorDeRisco = gestorDeRisco;
     }
 
-	public Long autorizar(String cartao, BigDecimal valor) throws CapturaNaoAutorizadaException,
-		                                        	              AlertaDeRiscoException {
+	public Long autorizar(String cartao, BigDecimal valor)
+			throws CapturaNaoAutorizadaException,
+		           AlertaDeRiscoException {
 		this.operadora.capturar(cartao, valor);
 		this.gestorDeRisco.avaliarRisco(cartao, valor);
 		return this.operadora.confirmar();
