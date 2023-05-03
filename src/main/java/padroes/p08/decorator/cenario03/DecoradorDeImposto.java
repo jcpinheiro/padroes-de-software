@@ -1,6 +1,6 @@
 package padroes.p08.decorator.cenario03;
 
-public abstract class DecoradorDeImposto implements Imposto {
+abstract class DecoradorDeImposto implements Imposto {
 	
 	private Imposto outroImposto;
 

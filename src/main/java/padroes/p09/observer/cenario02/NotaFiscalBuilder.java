@@ -14,6 +14,7 @@ public class NotaFiscalBuilder {
 	public List<ItemDaNota> itens;
 	public String observacoes;
 
+	// ouvintes
 	private List<AcaoAposGerarNotaFiscal> acoes;
  	
 	public NotaFiscalBuilder() {
@@ -21,6 +22,7 @@ public class NotaFiscalBuilder {
 		acoes = new ArrayList<AcaoAposGerarNotaFiscal>();
 	}
 
+	// registro dos ouvintes
 	public void adiciona(AcaoAposGerarNotaFiscal acao) {
 		acoes.add(acao);
 	}
