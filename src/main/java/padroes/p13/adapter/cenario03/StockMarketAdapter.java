@@ -10,6 +10,9 @@ public class StockMarketAdapter implements CSVParser {
 	
 	@Override
 	public void parseCSV() {
+
 		stockMarketDataParser.parseXML();
+
+		// converter para CSV
 	}
 }

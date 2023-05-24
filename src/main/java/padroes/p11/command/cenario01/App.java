@@ -21,8 +21,7 @@ package padroes.p11.command.cenario01;
  * 					Client:  The client decides which commands to execute at which points
  * 						 To execute a command, it passes the command object to the invoker object
  * 
- * 
- */
+  */
 
 public class App {
 

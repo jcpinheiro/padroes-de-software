@@ -16,18 +16,22 @@ public class Alexa {
 	}
 
 	public void sendRequest(String request) {
+
 		if(request.equals("Turn on the Living room light")) {
 			System.out.println("Turnning on the Living room light");
 			PhillipsHueLight light = (PhillipsHueLight) integrations.get("LivingRoomLight");
 			light.turnOn();
+
 		} else if(request.equals("Turn off the Living room light")) {
 			System.out.println("Turnning off the Living room light");
 			PhillipsHueLight light = (PhillipsHueLight) integrations.get("LivingRoomLight");
 			light.turnOff();
+
 		} else if(request.equals("Turn on the Kitchen light")) {
 			System.out.println("Turnning on the Kitchen light");
 			XiaomiLight light = (XiaomiLight) integrations.get("KitchenLight");
 			light.turnOn();
+
 		} else if(request.equals("Turn off the Kitchen light")) {
 			System.out.println("Turnning off the Kitchen light");
 			XiaomiLight light = (XiaomiLight) integrations.get("KitchenLight");

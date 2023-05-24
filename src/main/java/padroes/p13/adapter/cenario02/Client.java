@@ -21,7 +21,7 @@ public class Client {
 		//pc2.connectPort(monitor.getConnector());
 		// Don't work! That's the reason why we create the adapter
 		pc2.connectPort(new HDMIToVGAAdapter(monitor));
-		pc2.sendImageAndSound("Cat and rainbow", "Nyan cat song");
+		//pc2.sendImageAndSound("Cat and rainbow", "Nyan cat song");
 
 		System.out.println("------ Monitor Class Adapter ----------");
 		

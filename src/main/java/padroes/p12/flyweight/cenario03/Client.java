@@ -12,7 +12,9 @@ public class Client {
 		Map map = new Map();
 		Integer score = 0;
 		Integer reward;
-		BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader buffer = new BufferedReader(
+				new InputStreamReader(System.in));
+
 		while(!map.isGameOver()) {
 			map.drawMap();
 			System.out.println("Score: " + score);
