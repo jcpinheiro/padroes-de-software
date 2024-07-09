@@ -10,12 +10,5 @@ public class App {
 		Animal animal = AnimalFactory.getAnimal(AnimalType.LION);
 		animal.eat();
 
-/*
-		Integer integer = Integer.valueOf("1234");
-		LocalDate now = LocalDate.now();
-		NumberFormat currencyInstance = NumberFormat.getCurrencyInstance();
-*/
-
-
 	}
 }

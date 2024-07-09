@@ -2,8 +2,10 @@
   <library name="jfugue-5.0.9">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/src/lib/jfugue-5.0.9.jar!/" />
+      <root url="file://$PROJECT_DIR$/src/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/src/lib" recursive="false" />
   </library>
 </component>
