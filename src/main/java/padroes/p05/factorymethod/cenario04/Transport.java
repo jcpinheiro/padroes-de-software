@@ -5,7 +5,7 @@ import padroes.p05.factorymethod.cenario04.vehicles.IVehicle;
 
 public abstract class Transport {
 
-    void startTransport(){
+    final void startTransport(){
         IVehicle vehicle = createTransport();
         vehicle.startRoute();
     }

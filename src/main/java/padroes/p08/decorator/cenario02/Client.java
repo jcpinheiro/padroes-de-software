@@ -20,6 +20,7 @@ public class Client {
 		order("Tea", new Tea());
 		order("Lungo", new DoubleDrink(new Expresso()));
 		order("Lungo", new Milk(new DoubleDrink(new Expresso())) );
+		order("Lungo Milk", new DoubleDrink(new Milk(new Expresso())) );
 		order("Cafe Au Lait", new Milk(new Expresso()));
 		order("English Tea", new DoubleDrink(new Milk(new Tea())) );
 	}

@@ -12,7 +12,7 @@ public class Client {
 		IPhoneFactory iphone11ProFactory = new IPhone11ProFactory();
 		
 		System.out.println("### Ordering an iPhone X");
-		IPhone iphone = iphoneXFactory.orderIPhone();
+		IPhone iphone = iphone11ProFactory.orderIPhone();
 		System.out.println(iphone);
 		
 		System.out.println("\n\n### Ordering an iPhone 11 HighEnd");

@@ -6,6 +6,7 @@ public class FactoryProducer {
 		
 		if(factory.equals("ELECTRIC"))
 			return new ElectricCarFactory();
+
 		else if(factory.equals("PETROL"))
 			return new PetrolCarFactory();
 		

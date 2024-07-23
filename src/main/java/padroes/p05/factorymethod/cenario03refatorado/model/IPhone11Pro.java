@@ -10,4 +10,10 @@ public class IPhone11Pro extends IPhone {
 		System.out.println("\t- 4Gb RAM");
 		System.out.println("\t- 512Gb Memory");
 	}
+
+	@Override
+	public void assemble() {
+		super.assemble();
+
+	}
 }

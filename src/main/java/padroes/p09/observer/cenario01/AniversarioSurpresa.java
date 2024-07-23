@@ -4,6 +4,8 @@ public class AniversarioSurpresa {
 
     public static void main(String[] args) {
         Namorada namorada = new Namorada();
+        // Convidados ..
+
         Porteiro porteiro = new Porteiro();
 
         porteiro.adicionaObservador(namorada );
