@@ -48,7 +48,7 @@ public class Principal {
 
 		scheduler.start();
 
-		Thread.sleep(220000);
+		//Thread.sleep(220000);
 
 		scheduler.shutdown(true);
 	}

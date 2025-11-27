@@ -4,6 +4,7 @@ import padroes.p05.factorymethod.cenario03refatorado.model.IPhone;
 
 public abstract class IPhoneFactory {
 
+	// template method
 	public IPhone orderIPhone() {
 		IPhone device = null;
 		
@@ -16,6 +17,6 @@ public abstract class IPhoneFactory {
 		
 		return device;
 	}
-	// factory method
+	// factory method (hook method)
 	protected abstract IPhone createIPhone();
 }

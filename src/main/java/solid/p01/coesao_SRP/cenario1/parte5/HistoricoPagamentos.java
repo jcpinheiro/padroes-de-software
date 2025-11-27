@@ -6,13 +6,13 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class HistoricoPagamentos {
+final class HistoricoPagamentos {
 	
 	private final List<Pagamento> pagamentos = new ArrayList<>();
 	
 	private double valorPago;
 
-	public void registra(Pagamento pagamento) {
+	void registra(Pagamento pagamento) {
 		this.pagamentos.add(pagamento);
 		paga(pagamento.getValor());
 	}
@@ -27,21 +27,21 @@ class HistoricoPagamentos {
 		this.valorPago += valor;
 	}
 
-	public List<Pagamento> pagamentosAntesDe(LocalDate data) {
+	List<Pagamento> pagamentosAntesDe(LocalDate data) {
 		return this.pagamentos
 				.stream()
 				.filter(pagamento ->   pagamento.getData().isBefore(data) )
 				.collect(Collectors.toList() );
 	}
 
-	public List<Pagamento> pagamentosComValorMaiorQue(double valorMinimo) {
+	List<Pagamento> pagamentosComValorMaiorQue(double valorMinimo) {
 		return this.pagamentos
 				.stream()
 				.filter(pagamento -> pagamento.getValor() > valorMinimo)
 				.collect(Collectors.toList() );
 
 	}
-	public double getValorPago() {
+	double getValorPago() {
 		return this.valorPago;
 	}
 

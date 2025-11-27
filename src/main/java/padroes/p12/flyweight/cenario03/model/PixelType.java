@@ -1,6 +1,10 @@
 package padroes.p12.flyweight.cenario03.model;
 
-public class PixelType {
+public record PixelType(Character character, Integer treasureReward) {
+
+}
+
+/*public class PixelType {
 
 	private final Character character;
 	private final Integer treasureReward;
@@ -17,4 +21,4 @@ public class PixelType {
 	public Integer getTreasureReward() {
 		return treasureReward;
 	}
-}
+}*/

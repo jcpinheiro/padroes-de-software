@@ -12,6 +12,7 @@ public class MinhaApp {
 		a = new Bola(a);
 		a = new Bola(a);
 		a = new Bola(a);
+		a = new PiscaPisca(a);
 
 		a.showEnfeites();
 	}

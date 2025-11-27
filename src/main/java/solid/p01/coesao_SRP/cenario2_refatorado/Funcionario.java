@@ -42,7 +42,7 @@ public class Funcionario {
     }
 
     public double calculaGratificao() {
-        return cargo.getGratificao().calcula( this );
+        return this.cargo.getGratificao().calcula( this );
     }
 
     public double calculaSalarioMaisGratificacao() {

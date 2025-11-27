@@ -4,11 +4,11 @@ public class CalculadoraDeSalario {
 
     public double calcula(Funcionario funcionario) {
        
-    	if(Cargo.DESENVOLVEDOR.equals(funcionario.getCargo())) {
+    	if(funcionario.getCargo().equals(Cargo.DESENVOLVEDOR )) {
             return gratificaDezOuVintePorcento(funcionario);
         }
 
-        if(Cargo.DBA.equals(funcionario.getCargo()) || Cargo.ANALISTA.equals(funcionario.getCargo())) {
+        else if(funcionario.getCargo().equals(Cargo.DBA) || funcionario.getCargo().equals(Cargo.ANALISTA)) {
             return gratificaQuinzeOuVinteCincoPorcento(funcionario);
         }
 

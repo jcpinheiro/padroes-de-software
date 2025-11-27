@@ -57,7 +57,7 @@ public class Map {
 			for(int column = 0; column < map[row].length; column++) {
 				Pixel cell = map[row][column];
 				System.out.print(' ');
-				System.out.print(cell.isOppened()? cell.getType().getCharacter() : '#');
+				System.out.print(cell.isOppened()? cell.getType().character() : '#');
 			}
 		}
 		System.out.println(String.format("\nYou have %d trys left", trysRemaining));
@@ -77,7 +77,7 @@ public class Map {
 		if(!choosen.isOppened()) {
 			choosen.setOppened(true);
 			trysRemaining--;
-			return choosen.getType().getTreasureReward();
+			return choosen.getType().treasureReward();
 		}
 		return 0;
 	}

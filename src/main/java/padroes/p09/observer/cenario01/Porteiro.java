@@ -19,7 +19,8 @@ public class Porteiro extends Thread {
 
         while (true ) {
             int valor = scanner.nextInt();
-            if(valor == 1) {
+            int numeroApto = 1;
+            if(valor == numeroApto) {
                 ChegadaAniversarioEvent event =
                         new ChegadaAniversarioEvent(LocalDateTime.now() );
 

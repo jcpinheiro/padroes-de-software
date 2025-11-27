@@ -6,6 +6,10 @@ public class UIController {
 	private DataReadRepository dataReadRepository;
 	private DataWriteRepository dataWriteRepository;
 
+	public UIController(DataReadRepository dataReadRepository, DataWriteRepository dataWriteRepository) {
+		this.dataReadRepository = dataReadRepository;
+		this.dataWriteRepository = dataWriteRepository;
+	}
 
 	public void persist(Object object) {
 

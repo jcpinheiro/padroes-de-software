@@ -6,7 +6,7 @@ public class CalculadorDeDescontos {
 
     Desconto porCincoItens = new DescontoPorCincoItens();
     Desconto porQuinhentosReais = new DescontoPorMaisDeQuinhentosReais();
-    SemDesconto semDesconto = new SemDesconto();
+    Desconto semDesconto = new SemDesconto();
 
     //  configuração do chain
     porCincoItens.setProximo(porQuinhentosReais );

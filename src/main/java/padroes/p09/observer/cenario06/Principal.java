@@ -19,6 +19,7 @@ public class Principal {
 	public static void main(String[] args) throws Exception {
 		EnviadorEmail enviadorEmail = new EnviadorEmail();
 		EnviadorSMS enviadorSms = new EnviadorSMS();
+
 		Lancamentos lancamentos = new Lancamentos();
 		
 		JobDataMap jobDataMap = new JobDataMap();

@@ -28,6 +28,7 @@ public enum AnimalType {
 		}
 	};
 
+	// factory method
 	public abstract Animal getAnimal();
 
 }

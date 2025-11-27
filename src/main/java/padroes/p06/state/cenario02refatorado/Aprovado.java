@@ -3,7 +3,7 @@ package padroes.p06.state.cenario02refatorado;
 class Aprovado implements EstadoDeUmOrcamento {
 	
 	public void aplicaDescontoExtra(Orcamento orcamento) {
-		orcamento.valor -= orcamento.valor * 0.02;
+		orcamento.valor -= orcamento.valor * 0.03;
 	}
 
 	@Override

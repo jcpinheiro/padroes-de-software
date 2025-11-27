@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+import static java.util.Objects.nonNull;
+
 /*Cenário: Essa classe é utilizada para registrar e atualizar dívidas. 
 O método que registra dívidas cria uma instância de Divida, preenche o valor, 
 os dados do credor e guarda essa dívida num mapa em que a chave é o CNPJ do credor.*/
@@ -24,7 +26,7 @@ public class GerenciadorDeDividas {
 	public void pagaDivida(String cnpjCredor, double valor) {
 		
 		Divida divida = dividas.get(cnpjCredor);
-		if (Objects.nonNull(divida)) {
+		if (nonNull(divida) ) {
 			divida.paga(valor );
 
 		} else {

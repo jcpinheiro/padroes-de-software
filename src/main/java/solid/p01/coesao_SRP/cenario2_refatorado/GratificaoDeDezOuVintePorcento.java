@@ -10,5 +10,6 @@ public class GratificaoDeDezOuVintePorcento implements Gratificacao {
         }
         else {
             return funcionario.getSalarioBase() * 0.10;
-        }    }
+        }
+    }
 }

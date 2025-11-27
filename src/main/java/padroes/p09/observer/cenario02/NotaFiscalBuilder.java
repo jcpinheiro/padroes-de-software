@@ -1,5 +1,7 @@
 package padroes.p09.observer.cenario02;
 
+import padroes.p09.observer.cenario06.senders.EnviadorSMS;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -16,7 +18,8 @@ public class NotaFiscalBuilder {
 
 	// ouvintes
 	private List<AcaoAposGerarNotaFiscal> acoes;
- 	
+
+
 	public NotaFiscalBuilder() {
 		itens = new ArrayList<ItemDaNota>();
 		acoes = new ArrayList<AcaoAposGerarNotaFiscal>();
@@ -24,7 +27,7 @@ public class NotaFiscalBuilder {
 
 	// registro dos ouvintes
 	public void adiciona(AcaoAposGerarNotaFiscal acao) {
-		acoes.add(acao);
+		acoes.add(acao );
 	}
 	
 	

@@ -8,6 +8,7 @@ public class TesteImposto {
 		Imposto icms = new ICMS();
 
 		Imposto icmsComISS = new ICMS( new ISS( new CPMF() ) );
+		Imposto icmsComISS2 = new ICMS( new ISS(  ) );
 
 		CalculadorDeImpostos calculadora = new CalculadorDeImpostos();
 

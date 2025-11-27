@@ -33,7 +33,8 @@ public class BestOfferService {
 		return cart.getItems().stream()
 				.reduce(0d, (acc, item) -> 
 				acc + (item.getValue() * 
-						(discountsByCategory.get(item.getCategory()) != null? 1 - discountsByCategory.get(item.getCategory()): 1d))
+						(discountsByCategory.get(item.getCategory()) != null
+								? 1 - discountsByCategory.get(item.getCategory()): 1d))
 						, Double::sum);
 	}
 

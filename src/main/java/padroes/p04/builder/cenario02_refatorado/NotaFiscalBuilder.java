@@ -6,7 +6,6 @@ import java.util.List;
 
 public class NotaFiscalBuilder {
 
-
     private String razaoSocial;
     private String cnpj;
     private LocalDate dataDeEmissao;

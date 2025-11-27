@@ -3,6 +3,8 @@ package solid.p01.coesao_SRP.cenario1.parte1;
 import java.util.HashMap;
 import java.util.Objects;
 
+import static java.util.Objects.nonNull;
+
 /*Cenário: Registrar e atualizar dívidas.
 O método que registra dívidas cria uma instância de Divida, preenche o valor, 
 com os dados do credor e guarda essa dívida num mapa em que a chave é o CNPJ do credor.*/
@@ -19,6 +21,7 @@ public class GerenciadorDeDividas {
 		divida.setCredor(credor);
 		divida.setCnpjCredor(cnpjCredor);
 
+
 		dividas.put(cnpjCredor, divida);
 	}
 
@@ -26,7 +29,7 @@ public class GerenciadorDeDividas {
 		
 		Divida divida = dividas.get(cnpjCredor);
 
-		if (Objects.nonNull(divida) ) {
+		if (nonNull(divida ) ) {
 
 			divida.setValorPago(divida.getValorPago() + valor );
 			//divida.setValorPago(1000 );

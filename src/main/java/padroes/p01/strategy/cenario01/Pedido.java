@@ -32,7 +32,6 @@ public class Pedido {
             // ...
             return getTotal() - (0.10 * getTotal());
         }
-
         return getTotal();
     }
 }

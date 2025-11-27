@@ -10,6 +10,7 @@ public final class GerenciadorDeDividas {
 
     private final Map<Cnpj, Divida> dividas = new HashMap<>();
 
+
     public void registraDivida(Divida divida) {
         dividas.put(divida.getCnpjCredor(), divida);
     }
@@ -20,6 +21,8 @@ public final class GerenciadorDeDividas {
 
         if (divida != null) {
             divida.registra(pagamento );
+        } else {
+            throw new IllegalArgumentException("Divida não cadastrada!");
         }
 
 

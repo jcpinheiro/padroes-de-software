@@ -31,3 +31,5 @@ public class FlyweightSimulator {
 		return random.nextInt(50);
 	}
 }
+
+

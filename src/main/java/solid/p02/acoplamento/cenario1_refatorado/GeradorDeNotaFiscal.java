@@ -1,12 +1,14 @@
 package solid.p02.acoplamento.cenario1_refatorado;
 
+import org.junit.jupiter.params.shadow.com.univocity.parsers.common.IterableResult;
+
 import java.util.List;
 
 public class GeradorDeNotaFiscal {
 
-    private final List<AcaoAposGerarNota> acoesAposGerarNota;
+    private final Iterable<AcaoAposGerarNota> acoesAposGerarNota;
 
-    public GeradorDeNotaFiscal(List<AcaoAposGerarNota> acoes ) {
+    public GeradorDeNotaFiscal(Iterable<AcaoAposGerarNota> acoes ) {
         this.acoesAposGerarNota = acoes;
     }
 
@@ -14,12 +16,11 @@ public class GeradorDeNotaFiscal {
     public NotaFiscal gera(Fatura fatura) {
 
         double valor = fatura.getValorMensal();
-        NotaFiscal nf = new NotaFiscal(valor, impostoSimplesSobreO(valor) );
+        NotaFiscal notaFiscal = new NotaFiscal(valor, impostoSimplesSobreO(valor) );
 
+        acoesAposGerarNota.forEach(acaoAposGerarNota -> acaoAposGerarNota.executa(notaFiscal) );
 
-        acoesAposGerarNota.forEach(acaoAposGerarNota -> acaoAposGerarNota.executa(nf) );
-
-        return nf;
+        return notaFiscal;
     }
 
     private double impostoSimplesSobreO(double valor) {

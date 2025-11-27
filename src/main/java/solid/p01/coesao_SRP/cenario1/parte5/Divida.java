@@ -5,6 +5,7 @@ public class Divida {
 	private final double total;
 	private String credor;
 	private Cnpj cnpjCredor;
+
 	
 	private final HistoricoPagamentos historicoPagamentos = new HistoricoPagamentos();
 

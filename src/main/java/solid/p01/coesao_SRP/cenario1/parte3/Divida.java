@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Divida {
 
-	private double total;
+	private final double total;
 	private double valorPago;
 	private String credor;
 	private String cnpjCredor;
@@ -18,14 +18,9 @@ public class Divida {
 		this.total = total;
 	}
 
-/*
+
 	public List<Pagamento> getPagamentos() {
 		return Collections.unmodifiableList(pagamentos );
-	}
-*/
-
-	public Iterable<Pagamento> getPagamentos() {
-		return pagamentos;
 	}
 
 	public double getTotal() {

@@ -11,6 +11,9 @@ public class Divida {
 	private String cnpjCredor;
 
 	public Divida(double total) {
+		if (total <= 0) {
+			throw new IllegalArgumentException("O total da dívida deve ser um valor positivo");
+		}
 		this.total = total;
 	}
 

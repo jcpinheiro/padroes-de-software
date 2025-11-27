@@ -35,7 +35,7 @@ public class CarroPolicia implements Observer, Carro {
 		else if(acao.equals("esquerda")){
 			this.esquerda();
 		}
-		else if(acao.equals("p�ra")){
+		else if(acao.equals("pára")){
 			this.para();
 		}
 	}

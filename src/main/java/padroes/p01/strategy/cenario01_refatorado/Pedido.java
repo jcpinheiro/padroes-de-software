@@ -19,7 +19,7 @@ public class Pedido {
     }
 
     public double getTotalComDesconto() {
-        return this.getTotal() - strategy.calculaDesconto(this);
+        return this.getTotal() - strategy.calculaDesconto(this );
     }
 
     public void setStrategy(DescontoStrategy strategy) {

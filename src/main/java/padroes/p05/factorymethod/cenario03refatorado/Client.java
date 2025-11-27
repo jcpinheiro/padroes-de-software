@@ -16,7 +16,7 @@ public class Client {
 		System.out.println(iphone);
 		
 		System.out.println("\n\n### Ordering an iPhone 11 HighEnd");
-		IPhone iphone2 = iphone11ProFactory.orderIPhone();
+		IPhone iphone2 = iphoneXFactory.orderIPhone();
 		System.out.println(iphone2);
 	}
 }

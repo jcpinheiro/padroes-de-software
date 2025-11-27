@@ -1,6 +1,6 @@
 package solid.p04.liskov.cenario2_refatorado;
 
-public class CustomerRepository implements DataRepository  {
+public class CustomerRepository implements DataReadRepository, DataWriteRepository  {
 
 	private DataRepository dataRepository;
 

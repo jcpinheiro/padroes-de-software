@@ -9,6 +9,8 @@ public class UIController {
 		
 		if (!(dataRepository instanceof HistoricStockPriceRepository )) {
 			dataRepository.persist(object);
+		} else {
+            // TODO ...
 		}
 	}
 	

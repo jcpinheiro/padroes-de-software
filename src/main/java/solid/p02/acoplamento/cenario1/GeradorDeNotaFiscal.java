@@ -1,4 +1,5 @@
 package solid.p02.acoplamento.cenario1;
+
 public class GeradorDeNotaFiscal {
 
     private final EnviadorDeEmail email;
@@ -12,17 +13,25 @@ public class GeradorDeNotaFiscal {
         this.sms = sms;
     }
 
+/*
+    public GeradorDeNotaFiscal(EnviadorDeEmail email, NotaFiscalDao dao ) {
+        this.email = email;
+        this.dao = dao;
+        this.sms = null;
+    }
+*/
+
     public NotaFiscal gera(Fatura fatura) {
 
         double valor = fatura.getValorMensal();
 
-        NotaFiscal nf = new NotaFiscal(valor, impostoSimplesSobreO(valor) );
+        NotaFiscal notaFiscal = new NotaFiscal(valor, impostoSimplesSobreO(valor) );
 
-        dao.persiste(nf);
-        email.enviaEmail(nf);
-        sms.envia(nf);
+        dao.persiste(notaFiscal);
+        email.enviaEmail(notaFiscal);
+        sms.envia(notaFiscal);
 
-        return nf;
+        return notaFiscal;
     }
 
     private double impostoSimplesSobreO(double valor) {

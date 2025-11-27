@@ -14,7 +14,7 @@ public class NotaFiscal {
     private List<Item> itens;
     private String observacoes;
      
-    public NotaFiscal(String razaoSocial, String cnpj, LocalDate dataDeEmissao,
+    NotaFiscal(String razaoSocial, String cnpj, LocalDate dataDeEmissao,
                       double valorBruto, double impostos, List<Item> itens, String observacoes) {
         this.razaoSocial = razaoSocial;
         this.cnpj = cnpj;
